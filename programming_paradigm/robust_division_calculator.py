@@ -1,4 +1,3 @@
-# robust_division_calculator.py
 
 def safe_divide(numerator, denominator):
     try:
@@ -8,6 +7,7 @@ def safe_divide(numerator, denominator):
         return "Error: Please enter numeric values only."
 
     try:
-        return numerator / denominator
+        result = numerator / denominator
+        return f"The result of the division is {result}"
     except ZeroDivisionError:
         return "Error: Cannot divide by zero."
